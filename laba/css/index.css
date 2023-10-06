@@ -1,0 +1,108 @@
+.header-content-block{
+    display: flex;
+    height: 774px;
+}
+
+.header-content_inner{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0 37px;
+    flex-direction: column;
+}
+
+.header-content_inner > .header-content{
+    display: flex;
+    flex-direction: column;
+    height: 425px;
+}
+
+.header-content_inner .content-name_item{
+    color: #323232;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+}
+
+.header-content_inner .main-content_item{
+    color: #57463A;
+    /* Title */
+    font-family: Tenor Sans;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 17px;
+}
+
+.header-content_inner .description_item{
+    margin-top: 40px;
+    color: #323232;
+    font-family: Open Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+}
+
+.header-content_inner .button_item{
+    margin-top: 70px;
+}
+
+.header-content_inner .check-services{
+    padding: 18px 57px;
+    background-color: #A1B29F;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    color: white;
+}
+
+.header-content_inner .links-block{
+    margin-top: 94px;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    gap: 40px;
+    padding: 0 100px;
+}
+
+.nik-brand_args{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nik-brand_args .args-item{
+    width: 360px;
+    text-align: center;
+    padding: 15px 0;
+    color: #323232;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    border-bottom: 3px #715B4B solid;
+}
+
+.production_items{
+   width: 100%;
+   display: flex;
+   flex: 1 1 0;
+   flex-wrap: wrap;
+   justify-content: center;
+   
+}
+
+.production_items > li{
+    width: 290px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+    gap: 20px;
+    border: 1px black solid;
+    border-width:  0  2px 2px  0 
+}
+
