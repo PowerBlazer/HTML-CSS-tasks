@@ -91,18 +91,142 @@
    flex: 1 1 0;
    flex-wrap: wrap;
    justify-content: center;
-   
 }
 
-.production_items > li{
+.production_items {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.production_items > li {
     width: 290px;
-    flex-shrink: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 50px 0;
     gap: 20px;
-    border: 1px black solid;
-    border-width:  0  2px 2px  0 
+   
 }
+
+.production_items > li:nth-child(-n+4) {
+    border-top: 1px solid black;
+    border-left: 1px solid black; 
+}
+
+.production_items > li:nth-last-child(-n+4) {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black; 
+    border-right: 1px solid black; 
+}
+
+.production_items > li:nth-child(4){
+    border-right: 1px solid black;
+} 
+
+.production_items > li:nth-child(5){
+    border-left: 1px solid black;
+} 
+
+
+.block-info{
+    display: flex;
+}
+
+.block-info_inner{
+    padding: 70px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+    align-items: flex-start;
+}
+
+.block-info_inner > h4{
+    color: #000;
+    font-family: Tenor Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.block-info_inner > p {
+    max-width: 515px;
+    color: #000;
+    font-family: Open Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+}
+
+.block-info_inner > button{
+    margin: 10px 0;
+    padding: 18px 55px;
+    background: #A1B29F;
+    color: #F6F6F6;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.people-info_inner{
+    background: #EBEEEB;
+}
+
+.furniture-block {
+    background: #E3DACE;
+}
+
+.master-block{
+    background: #D4CDC3;
+}
+
+
+.video-block{
+    width: 1160px;
+    height: 700px;
+    background: #C4C4C4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.quality-assurance-block{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 40px;
+    padding: 100px 95px;
+    box-shadow:  0 0 0 1px #715B4B,0 0 0 15px #F3EFEA, 0 0 0 30px #A1B29F;
+    margin-bottom: 160px;
+}
+
+.quality-assurance-block > h1 {
+    color: #57463A;
+    text-align: center;
+    font-family: Tenor Sans;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.quality-assurance-block > p {
+    color: #000;
+    font-family: Open Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    margin-bottom: 80px;
+}
+
+.quality-assurance-block > .print{
+    position: absolute;
+    bottom: 38px;
+    right: 63px;
+}
+
 
