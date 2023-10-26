@@ -13,17 +13,24 @@
 </head>
 <body>
     <header>
-        <nav class="header_inner">
+        <nav class="header_inner " id="menu-burger">
             <ul class="left">
-                <li class="header-item"><a href="#">Мастер классы</a></li>
+                <li class="header-item"><a href="./master_class.html">Мастер классы</a></li>
                 <li class="header-item"><a href="./custom_furniture.html">Мебель на заказ</a></li>
             </ul>
             <img class="logo" src="./assets/icons/logo.svg" alt="logo" width="87" height="87">
             <ul class="right">
                 <li class="header-item"><a href="#">Контакты</a></li>
-                <li class="header-item"><a href="./about.html">О нас</a></li>
+                <li class="header-item"><a href="#">О нас</a></li>
             </ul>
+            <button class="close-menu_button">X</button>
+            
         </nav>
+        <button class="open-menu_button">
+            <div></div>
+            <div></div>
+            <div></div>
+        </button>
     </header>
 
     <main>
@@ -123,35 +130,35 @@
             <h1>Мастер-классы по реставрации мебели</h1>
             <ul class="master-furniture info-block">
                 <li>
-                    <img src="./assets/img/master_class/11.png" width="240"/>
+                    <img class="master-furniture_img" src="./assets/img/master_class/11.png" width="240"/>
                     <span>Буфет</span>
                 </li>
                 <li>
-                    <img src="./assets/img/master_class/12.png" width="212"/>
+                    <img class="master-furniture_img" src="./assets/img/master_class/12.png" width="212"/>
                     <span>Сундук</span>
                 </li>
                 <li>
-                    <img src="./assets/img/master_class/13.png"/>
+                    <img class="master-furniture_img" src="./assets/img/master_class/13.png"/>
                     <span>Комод</span>
                 </li>
                 <li>
-                    <img src="./assets/img/master_class/14.png"/>
+                    <img class="master-furniture_img" src="./assets/img/master_class/14.png"/>
                     <span>Советское кресло</span>
                 </li>
                 <li>
-                    <img src="./assets/img/master_class/15.png"/>
+                    <img  class="master-furniture_img" src="./assets/img/master_class/15.png"/>
                     <span>Стол</span>
                 </li>
                 <li>
-                    <img src="./assets/img/master_class/16.png"/>
+                    <img class="master-furniture_img" src="./assets/img/master_class/16.png"/>
                     <span>Стул</span>
                 </li>
                 <li>
-                    <img src="./assets/img/master_class/17.png"/>
+                    <img class="master-furniture_img" src="./assets/img/master_class/17.png"/>
                     <span>Обивка стула</span>
                 </li>
                 <li>
-                    <img src="./assets/img/master_class/18.png"/>
+                    <img class="master-furniture_img" src="./assets/img/master_class/18.png"/>
                     <span>Ремонт стула</span>
                 </li>
             </ul>
@@ -159,21 +166,23 @@
 
         <section>
             <h1>Мастер-классы по столярному делу</h1>
-            <ul class="master-furniture info-block">
+            <ul class="master-furniture carpentry-block info-block">
                 <li>
-                    <img src="./assets/img/master_class/19.png" />
+                    <img class="carpentry_img" src="./assets/img/master_class/19.png" />
                     <span>Консольный столик</span>
                 </li>
                 <li>
-                    <img src="./assets/img/master_class/20.png" />
+                    <img class="carpentry_img" src="./assets/img/master_class/20.png" />
                     <span>Столярное дело для начинающих</span>
                 </li>
             </ul>
         </section>
         <section>
+            <h1>Руководство по редизайну деревянной мебели</h1>
             <div class="info-furniture_block">
+                
                 <div class="info-furniture_inner">
-                    <h2>Руководство по редизайну деревянной мебели</h2>
+                    
                     <div class="description_inner">
                         <p class="decription">Здесь мы собрали всю информацию от подбора инстурментов и материалов до сборки мебели и фурнитуры. Чтобы вы самостоятельно могли разобраться с нюансами работы со старой мебелью из дерева. Наше руководство непременно станет вашей настольной книгой по реставрации мебели.</p>
                         <button class="abount_open">Подробнее</button>
@@ -208,4 +217,5 @@
       </div>
     </footer>
 </body>
+<script src="./scripts/main.js"></script>
 </html>

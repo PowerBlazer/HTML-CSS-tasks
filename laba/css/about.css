@@ -19,6 +19,7 @@
     font-size: 48px;
     font-style: normal;
     font-weight: 400;
+    text-align: center;
 }
 
 .page_name-en{
@@ -68,7 +69,6 @@
 .biography_inner{
     display: flex;
     flex-direction: column;
-    height: 460px;
     justify-content: space-between;
 }
 
@@ -127,6 +127,8 @@
 .smionas .slider{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .application{
@@ -146,4 +148,60 @@
     padding: 18px 52px;
     background-color: #A1B29F;
 }
+
+@media(max-width:820px){
+    .biography-block {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .features{
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+}
+
+@media(max-width:600px){
+  .biography-block .biography_inner{
+    padding: 0 30px;
+  } 
+  
+  .header-content .header-info_content{
+    align-items: start;
+    padding: 0 30px;
+  }
+
+  .header-content .header-info_content > li{
+    font-size: 32px;
+    text-align: left;
+  }
+
+  .biography-block img{
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .smionas .description{
+    padding: 0 30px;
+  }
+
+  .filosophy-block{
+    padding: 0 20px;
+    font-size: 18px;
+    text-align: center;
+  }
+
+
+  .features{
+    justify-content: flex-start;
+    padding: 0 30px;
+  }
+
+  .features > li{
+    text-align: start;
+  }
+}
+
+
 

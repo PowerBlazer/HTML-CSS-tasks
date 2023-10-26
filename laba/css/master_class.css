@@ -7,7 +7,7 @@
     display: flex;
     justify-content: center;
     align-items: end;
-    padding: 122px 0;
+    padding: 122px var(--content-margin);
 }
 
 .header-info_inner{
@@ -15,6 +15,7 @@
     flex-direction: column;
     gap: 100px;
     align-items: center;
+
 }
 
 .header-info_inner > h2{
@@ -34,6 +35,7 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
+
 }
 
 .works-block{
@@ -150,6 +152,7 @@
     justify-content: space-between;
 }
 
+
 .master-furniture > li {
     display: flex;
     flex-direction: column;
@@ -211,4 +214,64 @@
     width: 470px;
     height: 475px;
     background: #C4C4C4;
+}
+
+
+@media(max-width:1100px){
+    .works-block > .works{
+        justify-content: center;
+    }
+
+    .master-furniture:not(.carpentry-block){
+        justify-content:space-around;
+        gap: 50px;
+    }
+
+    .master-furniture:not(.carpentry-block) img{
+        width: 200px;
+    }
+
+    .carpentry-block{
+        justify-content: center;
+    }
+}
+
+@media(max-width:890px){
+    .info-furniture_block{
+        flex-direction: column-reverse;
+    }
+
+    .img_test{
+        width: 100%;
+    }
+}
+
+@media(max-width:600px){
+    :root{
+        --content-margin:20px
+    }
+
+    .master-furniture .carpentry_img{
+        width: 100%;
+    }
+
+
+    .master-furniture .master-furniture_img{
+        width: 150px;
+    }
+    
+
+    .header-info_inner > h2{
+        font-size: 32px;
+    }
+
+    .technologies h4{
+        max-width: 250px;
+    }
+
+    .common-info h2{
+        font-size: 32px;
+    }
+
+
 }
