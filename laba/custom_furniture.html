@@ -41,7 +41,7 @@
                     <li class="page_name-ru">Столярная мастерская</li>
                     <li class="page_name-en">NIKASON BRAND</li>
                 </ul>
-                <button class="order_button" id="order_button">Заказать мебель</button>
+                <button class="order_button contact-button" id="order_button">Заказать мебель</button>
             </div>
         </div>
 
@@ -140,9 +140,44 @@
         <section>
             <h1>Оставьте заявку и мы с вами свяжемся</h1>
             <div class="application info-block">
-                <button class="application-button">Оставить заявку</button>
+                <button class="application-button contact-button">Оставить заявку</button>
             </div>
         </section>
+
+        <div class="modal-gallery_modal">
+            <button class="close_button" type="button" title="close" id="close-gallery_button">
+                <div></div>
+                <div></div>
+            </button>
+
+            <div class="modal-gallery_inner" id="modal-gallery_content">
+                
+            </div>
+        </div>
+
+        <div class="modal-registration_modal">
+            <div class="modal-registration_inner">
+                <h1 class="registration_header">Связаться с нами</h1>
+                <div class="registration_inner">
+                    <div class="form-item">
+                        <label>Имя</label>
+                        <input type="text" id="name-form" placeholder="Имя">
+                    </div>
+    
+                    <div class="form-item">
+                        <label>Номер телефона</label>
+                        <input type="number" id="number-form" placeholder="Номер телефона">
+                    </div>
+    
+                    <button class="contact_button" id="contact-form">Связаться</button>
+                </div>
+            </div>
+
+            <button class="close_button" type="button" title="close" id="close-registration_button">
+                <div></div>
+                <div></div>
+            </button>
+        </div>
     </main>
     <footer class="footer">
         <div class="footer-inner">
@@ -170,4 +205,5 @@
     </footer>
 </body>
 <script src="./scripts/main.js"></script>
+<script src="./scripts/scripts.js"></script>
 </html>
